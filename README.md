@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# FER202 — Front-End Web Development with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bài nộp **Exercise 1 → 10** của môn FER202, lớp **SE2059**.
+Dự án tạo bằng Create React App, dùng Bootstrap 5.3 và React-Bootstrap.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Chạy thử
 
-### `npm start`
+```bash
+npm install     # lần đầu
+npm start       # mở http://localhost:3000
+npm test        # 3 phép kiểm
+npm run build   # bản tĩnh trong build/
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Yêu cầu: Node.js LTS (làm bài trên `v22.21.0`) và npm (`10.9.4`).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Mười bài tập ở đâu
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Chọn bài ở menu bên trái. Mỗi bài một file riêng trong `src/exercises/`:
 
-### `npm run build`
+| Bài | Nội dung | File | Chương · Slot |
+|----|----------|------|---------------|
+| 1 | Cài Node.js & npm | `Ex01NodeNpm.js` | C1 · Slot 1 slide 20 |
+| 2 | App React đầu tiên | `Ex02FirstApp.js` | C1 · Slot 1 slide 23–25 |
+| 3 | Git: cài, cấu hình & push | `Ex03Git.js` | C1 · Slot 1 slide 26–33 |
+| 4 | JSX & ES6 — lab method mảng | `Ex04JsxEs6.js` | C3 · Slot 2–3 slide 35 & 41 |
+| 5 | Bắt đầu với Bootstrap | `Ex05Bootstrap.js` | C4 · Slot 4–5 slide 14 |
+| 6 | Layout bằng lưới Bootstrap | `Ex06Grid.js` | C4 · Slot 4–5 slide 31 |
+| 7 | Cột thẻ (Cards) | `Ex07Cards.js` | C4 · Slot 4–5 slide 48 |
+| 8 | Form controls | `Ex08Form.js` | C4 · Slot 4–5 slide 51 |
+| 9 | React Component 1 | `Ex09Components.js` | C5 · Slot 6 slide 21 |
+| 10 | Demo React-Bootstrap | `Ex10ReactBootstrap.js` | C4 · Slot 7 slide 23 |
+| Bonus | ES6+ (Class, spread, async/await…) | `BonusEs6.js` | C2 |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Mỗi trang trình bày cùng một thứ tự: **Mục tiêu → Yêu cầu → Mã nguồn →
+Bài làm chạy thật → Bẫy**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Cấu trúc thư mục
 
-### `npm run eject`
+```
+src/
+├── App.js                    khung: navbar + menu 10 bài
+├── App.css                   kiểu dáng của khung (rất mỏng)
+├── BonusEs6.css              kiểu dáng RIÊNG của phần Bonus, khoanh trong .App
+├── components/
+│   ├── KhungBaiTap.js        khung trình bày dùng chung cho mọi bài
+│   └── DemoComponent.js      component mẫu React-Bootstrap
+├── data/
+│   └── lab.js                dữ liệu: people, companies, courses, products…
+├── exercises/                MƯỜI bài tập, mỗi bài một file
+│   └── index.js              danh mục bài — một nguồn sự thật duy nhất
+├── Student.js, Person.js, evaluation.js    lớp ES6 của phần Bonus
+└── index.js                  điểm vào, nạp CSS Bootstrap
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+public/images/                ảnh minh hoạ (SVG, nằm trong project)
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Vài lựa chọn khi làm bài
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Không dùng React Router.** Chương 9 mới học tới, nên điều hướng giữa các
+  bài làm bằng `useState` — đúng phạm vi đã học đến tuần 2.
+- **Ảnh nằm trong `public/images/`, không lấy từ Internet.** Bài nộp phải hiện
+  đủ ảnh cả khi máy chấm không có mạng.
+- **CSS của phần Bonus được khoanh trong `.App`.** Bản cũ có `.card { }` và
+  `button { }` ở cấp toàn cục — hai selector đó đè thẳng lên `.card` và mọi nút
+  của Bootstrap, làm hỏng bài 7 và bài 10.
+- **Bài 1, 2, 3 là bài môi trường**, không có mã chạy trong trình duyệt, nên
+  phần bài làm là các lệnh đã chạy kèm kết quả in ra thật trên máy.
