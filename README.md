@@ -3,6 +3,10 @@
 Bài nộp **Exercise 1 → 10** của môn FER202, lớp **SE2059**.
 Dự án tạo bằng Create React App, dùng Bootstrap 5.3 và React-Bootstrap.
 
+📘 **Học theo bài:** xem [`HUONG-DAN-HOC.md`](./HUONG-DAN-HOC.md) — từng bài
+làm gì, dạy kiến thức gì, làm thế nào, và cần biết sẵn HTML/CSS/JS tới đâu
+cùng lộ trình tự học.
+
 ---
 
 ## Chạy thử
