@@ -1,12 +1,4 @@
-/*
- * Kiểu dáng RIÊNG cho phần Bonus ES6 (file cũ `App.css`, đổi tên + khoanh vùng).
- *
- * ⚠️ VÌ SAO PHẢI KHOANH VÙNG: bản cũ có `.card { ... }` và `button { ... }` ở
- * cấp toàn cục. Hai selector đó ĐÈ THẲNG lên `.card` và mọi `<button>` của
- * Bootstrap, nên card ở Exercise 7/10 mất viền chuẩn và nút mất màu — hỏng ở
- * bài này vì CSS của bài kia, thứ rất khó lần ra. Mọi quy tắc dưới đây đã được
- * bọc trong `.App`, tức chỉ có hiệu lực bên trong component Bonus.
- */
+/* Css rieng cho phan Bonus, gioi han trong .App de khong de len Bootstrap */
 
 .App {
   text-align: center;

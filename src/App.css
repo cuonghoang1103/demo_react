@@ -1,18 +1,7 @@
-/*
- * Kiểu dáng của KHUNG app (Navbar + menu + vùng nội dung).
- *
- * Cố ý để rất mỏng: toàn bộ giao diện các bài đều dùng class Bootstrap, nên
- * thêm CSS ở đây là thêm một nguồn có thể đè lên Bootstrap. Kiểu dáng riêng
- * của phần Bonus ES6 nằm ở `BonusEs6.css` và đã khoanh trong `.App`.
- */
-
-/* Khối mã dài (Exercise 2, 3, 4) không được đẩy toác layout trên màn hẹp. */
-pre code {
-  font-size: 0.86rem;
-  line-height: 1.5;
+pre {
+  font-size: 14px;
 }
 
-/* Ảnh trong card giữ tỉ lệ cố định để lưới không so le khi ảnh chưa tải xong. */
 .card-img-top {
   aspect-ratio: 5 / 3;
   object-fit: cover;

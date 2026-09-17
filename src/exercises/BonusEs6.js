@@ -1,10 +1,4 @@
-/**
- * BONUS — bài ES6+ đã làm trước đó (Class, kế thừa, spread/rest,
- * destructuring, getter/setter, private field, static, Promise, async/await).
- *
- * Giữ nguyên nội dung cũ, chỉ tách khỏi App.js để App trở thành khung điều
- * hướng cho 10 bài tập. Nó bổ trợ cho Exercise 4 (phần ES6).
- */
+// Bonus - bai ES6 da lam o buoi truoc (class, spread, destructuring, async/await)
 import { useState } from 'react';
 import '../BonusEs6.css';
 import { Student, StudentCollection, createScores } from '../Student';
